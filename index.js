@@ -8,4 +8,6 @@ function fuzzyMatch(drivers, part){
   return drivers.filter(n => check.test(n.toLowerCase()))
 }
 
-function matchName()
+function matchName(drivers, name){
+  drivers.filter(n => n.name === name)
+}
