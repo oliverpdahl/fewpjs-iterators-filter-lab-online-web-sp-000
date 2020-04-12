@@ -5,5 +5,5 @@ function findMatching(drivers, name){
 
 function fuzzyMatch(drivers, part){
   check = RegExp("^"+part.toLowerCase())
-  return drivers.filter(n => check.test(n.toLowerCase())
+  return drivers.filter(n => check.test(n.toLowerCase()))
 }
